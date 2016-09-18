@@ -1,0 +1,141 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Archerfish</title>
+<link rel="stylesheet" type="text/css" href="style.css"/>
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href='https://fonts.useso.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+<link href='https://fonts.useso.com/css?family=Lato:400,900,700,300,100' rel='stylesheet' type='text/css'>
+<link href='https://fonts.useso.com/css?family=Roboto+Slab:400,700,300,100' rel='stylesheet' type='text/css'>
+<script src="https://ajax.useso.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+</head>
+
+<body>
+<div class="header">
+	<div class="container">
+    	<div class="row">
+        	<div class="col-md-12 col-sm-12 col-xs-12">
+            	<div class="logo pull-left col-md-6 col-sm-6 col-xs-12">
+                	<h1>Hackathon</h1>
+                </div>
+                <div class="social col-md-6 col-sm-6 col-xs-12">
+            		<ul class="pull-right">
+                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-12 col-sm-12 col-xs-12">
+            	<div class="main-title text-center">
+                	<h2>Archerfish</h2>
+                    <p>Making remote debugging on Nano Server easier.</p>
+                    <div id="countdown" data-wow-delay=".3s" data-date="Dec 26, 2015 06:00:00"></div>
+                    <a href="download" class="subscribe-tag page-scroll">Download</a>
+                </div>
+                
+                	
+            </div>
+        </div>
+    </div>
+</div>
+<div class="about text-center">
+	<div class="container">
+    	<div class="row">
+        	<div class="col-md-12">
+            	<div class="title">
+                	<h3>About Archerfish</h3>
+                </div>
+                <div class="desc">
+                	<p>We would like to create a tool to enable the remote debugging on Nano Server using several clicks, instead of typing a series of long commands..
+                	remote debugging is more complex and takes your time remember the command line and your configuration. Archerfish is intelligent tool to help you solve
+                	all the problem. Now, follow us to enjoy remote debugging.</p>
+                </div>
+            </div>
+            <div class="featurebox col-md-12 col-sm-12 col-xs-12">
+            <div class="col-md-6 col-sm-6 col-xs-12">
+            	<div class="feature text-left">
+                	<h4>Easy to use</h4>
+                    <p>Just a few Click on some Buttons and type some parameters, Archerfish will help you to do many operations instead of complex command lines. </p>
+                </div>
+            </div>
+            <div class="col-md-6 col-sm-6 col-xs-12">
+            	<div class="feature text-left">
+                	<h4>Configuration in Cloud</h4>
+                    <p>All the configuration you type in this computer will auto save in the cloud. When you change your computer to debug, Archerfish will auto load your configuration.</p>
+                </div>
+            </div>
+            <div class="col-md-6 col-sm-6 col-xs-12">
+            	<div class="feature text-left">
+                	<h4>Many platform support</h4>
+                    <p>Archerfish now support Windbg debugging and Visual Stdio. In the future, Archerfish will support more platform such Kernel debug.</p>
+                </div>
+            </div>
+            <div class="col-md-6 col-sm-6 col-xs-12">
+            	<div class="feature text-left">
+                	<h4>How to use</h4>
+                    <p>Before using Archerfish, your computer should install windbg under the folder "C:\\Debuggers" and your computer must have PowerShell. Only those two components, you can enjoy remote debugging everywhere. </p>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="footer" id="footer">
+	<div class="container">
+    	<div class="row">
+        	<div class="col-md-12">
+        	<div class="footer-title text-center">
+            	<h3>Sign up for our newsletter to get notified!</h3>
+                <p>Subscibe to get latest notification and news about our website. Remember you can always edit this text and replace it with your words.</p>
+            </div>
+            <div class="subscribeform">
+            	<form class="subscribe_form" action="#" method="post">
+	                <input required value="" placeholder="Enter your email..." class="email" id="email" name="email" type="email">
+	                <input class="subscribe" name="email" value="Subscribe!" type="submit">
+	            </form>
+            </div>
+            <div class="social text-center">
+            		<ul>
+                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                    </ul>
+             </div>
+             </div>
+             <div class="col-md-12 text-center footer-line">
+             	<p>Copyright &copy; 2016.Microsoft All rights reserved.</p>
+             </div>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/jquery.countdown.min.js"></script>
+<script type="text/javascript">
+if ($('#countdown').length) { 
+			$('#countdown').countdown({
+				render: function(data) {
+					if (data.years >= 1) {
+						var $days =	(data.years*365)+data.days;
+					} else {
+						var $days = data.days;
+					}
+				  $(this.el).html(
+					  '<div class="day">' + this.leadingZeros($days) + ' <span>Days</span></div>'+
+					  '<div class="hour">' + this.leadingZeros(data.hours, 2) + ' <span>Hours</span></div>'+
+					  '<div class="min">' + this.leadingZeros(data.min, 2) + ' <span>Minutes</span></div>'+
+					  '<div class="sec">' + this.leadingZeros(data.sec, 2) + ' <span>Seconds</span></div>'
+				  );
+				}
+			});
+		}
+
+</script>
+</body>
+</html>
